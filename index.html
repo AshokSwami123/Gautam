@@ -1,0 +1,328 @@
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Trade With Gautam Jhaa | Official Telegram Channel</title>
+  <meta name="description" content="Join karo hamara official Telegram channel - daily stock market analysis, calls, free education aur live alerts.">
+  <style>
+    :root {
+      --bg: #0a0e14;
+      --bg-card: #131a24;
+      --green: #00d68f;
+      --gold: #ffb020;
+      --red: #ff4d4f;
+      --text: #e8edf3;
+      --text-dim: #8a97a8;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    /* ---- TICKER ---- */
+    .ticker {
+      background: #0d1420;
+      border-bottom: 1px solid #1c2733;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 8px 0;
+      font-size: 13px;
+      position: relative;
+    }
+    .ticker-track {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll-ticker 18s linear infinite;
+    }
+    .ticker span {
+      display: inline-block;
+      padding: 0 20px;
+      color: var(--green);
+      font-weight: 600;
+    }
+    .ticker span.down {
+      color: var(--red);
+    }
+    @keyframes scroll-ticker {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ---- HERO ---- */
+    .hero {
+      text-align: center;
+      padding: 40px 15px 30px;
+      background: radial-gradient(circle at top, #10202080, transparent 60%);
+    }
+    .live-badge {
+      display: inline-block;
+      background: #0f2a20;
+      color: var(--green);
+      border: 1px solid var(--green);
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      letter-spacing: .5px;
+    }
+    .hero img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 3px solid var(--green);
+      object-fit: cover;
+      margin-bottom: 12px;
+    }
+    .verified {
+      color: var(--green);
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+    .hero h1 {
+      font-size: clamp(16px, 5.2vw, 36px);
+      font-weight: 800;
+      margin: 10px 0 6px;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+    .hero p.sub {
+      color: var(--text-dim);
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+    .badges {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 26px;
+      font-size: 13px;
+      color: var(--text-dim);
+    }
+
+    /* BIG & MOTION BUTTON DESIGN */
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 90%; /* Mobile screen par bada dikhne ke liye width 90% */
+      max-width: 420px;
+      background: linear-gradient(90deg, #00d68f, #00b377, #00d68f);
+      background-size: 200% auto;
+      color: #04140d;
+      font-weight: 800;
+      padding: 20px 10px; /* Mobile par bada height aur padding */
+      border-radius: 14px;
+      text-decoration: none;
+      font-size: clamp(18px, 5vw, 22px); /* Bada font size jo phone me clean dikhe */
+      white-space: nowrap; /* Text strictly ek hi line me rahega */
+      box-shadow: 0 10px 28px -6px rgba(0, 214, 143, .6);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      animation: pulse-glow 1.8s infinite, shimmer 3s linear infinite; /* Dynamic Motion Effect */
+      transition: transform .2s ease;
+    }
+
+    /* Motion Shimmer Effect */
+    .cta-btn::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: rgba(255, 255, 255, 0.25);
+      transform: rotate(30deg) translateY(-100%);
+      animation: light-swipe 2.5s infinite;
+    }
+
+    .cta-btn:hover {
+      transform: scale(1.03);
+    }
+    .cta-btn:active {
+      transform: scale(0.97);
+    }
+
+    /* Pulsing Glow Animation */
+    @keyframes pulse-glow {
+      0% { box-shadow: 0 0 0 0 rgba(0, 214, 143, 0.7); }
+      70% { box-shadow: 0 0 0 18px rgba(0, 214, 143, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(0, 214, 143, 0); }
+    }
+
+    /* Shimmer Motion Animation */
+    @keyframes shimmer {
+      0% { background-position: 0% center; }
+      100% { background-position: 200% center; }
+    }
+
+    @keyframes light-swipe {
+      0% { transform: rotate(30deg) translateY(-100%); }
+      30%, 100% { transform: rotate(30deg) translateY(100%); }
+    }
+
+    .cta-note {
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+    .join-count {
+      margin-top: 10px;
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    /* ---- FEATURES ---- */
+    .features {
+      padding: 40px 15px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .features h2 {
+      font-size: 22px;
+      margin-bottom: 8px;
+    }
+    .features > p {
+      color: var(--text-dim);
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid #1c2733;
+      border-radius: 14px;
+      padding: 22px 16px;
+      text-align: left;
+    }
+    .card .icon {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    .card p {
+      font-size: 13px;
+      color: var(--text-dim);
+      line-height: 1.5;
+    }
+
+    /* ---- DISCLAIMER ---- */
+    .disclaimer {
+      max-width: 700px;
+      margin: 30px auto 0;
+      padding: 16px;
+      background: #1a1408;
+      border: 1px solid #3a2c0f;
+      border-radius: 10px;
+      font-size: 12px;
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
+    .disclaimer strong {
+      color: var(--gold);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--text-dim);
+      font-size: 12px;
+      border-top: 1px solid #1c2733;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>NIFTY ▲ 0.82%</span>
+      <span>BANK NIFTY ▲ 1.15%</span>
+      <span class="down">SENSEX ▼ 0.34%</span>
+      <span>FINNIFTY ▲ 0.91%</span>
+      <span>MIDCAP ▲ 0.62%</span>
+      <span>NIFTY ▲ 0.82%</span>
+      <span>BANK NIFTY ▲ 1.15%</span>
+      <span class="down">SENSEX ▼ 0.34%</span>
+      <span>FINNIFTY ▲ 0.91%</span>
+      <span>MIDCAP ▲ 0.62%</span>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="live-badge">● CHANNEL LIVE &amp; ACTIVE</div>
+    <br>
+    <img decoding="async" src="logo.jpg" alt="Gautam Jhaa - St@ck Market Analyst">
+    <div class="verified">✓ Official Learning community</div>
+    <h1>TR@DE WITH GAUTAM JHAA</h1>
+    <p class="sub">St@ck Market Analysis • Indian Markets</p>
+    <div class="badges">
+      <span>📊 Daily Analysis</span>
+      <span>🎓 Free Education</span>
+      <span>⚡ Live Alerts</span>
+    </div>
+    <a class="cta-btn" href="https://t.me/+fhgq7UIXfe5jNGI9" target="_blank" rel="noopener">✈️ JOIN FREE NOW</a>
+    <div class="cta-note">✓ Free to Join &nbsp; ✓ No Charges &nbsp; ✓ Instant Access</div>
+    <div class="join-count">🔥 18,000+ logon ne abhi join kiya</div>
+  </section>
+
+  <section class="features">
+    <h2>WHAT YOU GET</h2>
+    <p>Everything you need to tr@de smarter, in one place.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">📈</div>
+        <h3>Daily Market Analysis</h3>
+        <p>Pre-market &amp; post-market breakdowns every trading day.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎯</div>
+        <h3>St@ck Calls</h3>
+        <p>Clear entry, target &amp; stop-loss levels.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📚</div>
+        <h3>Free Education</h3>
+        <p>Learn trading from basics to advanced.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Market Updates</h3>
+        <p>Instant alerts when opportunities arise.</p>
+      </div>
+    </div>
+
+    <div class="disclaimer">
+      <strong>⚠ Disclaimer:</strong> All content shared on this channel is purely for educational and informational purposes. Trading in st@cks and derivatives involves risk. Please consult a SEBI-registered financial advisor before making investment decisions.
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Gautam Jhaa &nbsp;•&nbsp; Made with ❤️ for Indian Tr@ders
+  </footer>
+
+</body>
+</html>	
